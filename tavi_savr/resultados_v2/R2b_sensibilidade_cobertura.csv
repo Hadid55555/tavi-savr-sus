@@ -1,0 +1,7 @@
+analise,ufs_excluidas,SUS_sem_plano,Planos,razao,ic_inf,ic_sup,razao_pop_total
+Todas as UFs,,29.6,201.5,6.81,6.27,7.4,9.08
+"Sem CE, AP, RO (codificação TISS)","AP,CE,RO",27.2,205.3,7.55,6.92,8.23,10.14
+Sem tercil de maior cobertura de planos,"DF,ES,GO,MG,MS,PR,RJ,RS,SP",20.6,229.5,11.12,9.41,13.14,12.77
+Só UFs de cobertura baixa (6%–11%),"AL,AM,CE,DF,ES,GO,MG,MS,MT,PB,PE,PR,RJ,RN,RS,SC,SE,SP",2.1,211.7,99.71,52.13,190.72,110.45
+Só UFs de cobertura media (12%–17%),"AC,AP,BA,DF,ES,GO,MA,MG,MS,PA,PI,PR,RJ,RO,RR,RS,SP,TO",35.1,237.7,6.77,5.64,8.12,7.99
+Só UFs de cobertura alta (18%–35%),"AC,AL,AM,AP,BA,CE,MA,MT,PA,PB,PE,PI,RN,RO,RR,SC,SE,TO",35.3,195.4,5.53,5.03,6.08,8.02

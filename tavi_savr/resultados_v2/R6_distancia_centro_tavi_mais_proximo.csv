@@ -1,0 +1,13 @@
+grupo,regiao,n,mediana_km,p75_km,pct_mais_100km,pct_mais_300km
+SAVR aórtica ≥70 (SUS),Centro-Oeste,79,296.0,560.0,94.9,45.6
+SAVR aórtica ≥70 (SUS),Nordeste,502,367.0,425.0,91.4,66.5
+SAVR aórtica ≥70 (SUS),Norte,82,519.0,951.0,100.0,100.0
+SAVR aórtica ≥70 (SUS),Sudeste,948,101.0,191.0,50.3,7.1
+SAVR aórtica ≥70 (SUS),Sul,952,123.0,292.0,55.4,22.7
+SAVR aórtica ≥70 (SUS),Brasil,2563,184.0,318.0,63.2,28.7
+TAVI (SUS),Centro-Oeste,12,6.0,277.0,41.7,25.0
+TAVI (SUS),Nordeste,222,26.0,149.0,33.3,7.7
+TAVI (SUS),Norte,2,1149.0,1283.0,100.0,100.0
+TAVI (SUS),Sudeste,680,18.0,56.0,15.6,0.7
+TAVI (SUS),Sul,206,87.0,144.0,41.3,9.2
+TAVI (SUS),Brasil,1122,25.0,97.0,24.2,4.1

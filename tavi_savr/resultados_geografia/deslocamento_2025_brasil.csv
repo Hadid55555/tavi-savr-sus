@@ -1,0 +1,5 @@
+grupo,fonte,n,dist_mediana_km,pct_mais_300km,pct_fora_uf,ufs_hospital,municipios_hospital
+SAVR aórtica,Planos,1074,0.0,5.6,6.1,22,115
+SAVR aórtica,SUS,4419,28.4,5.2,1.4,25,134
+TAVI,Planos,1877,0.0,6.2,6.1,24,134
+TAVI,SUS,828,25.4,6.0,0.8,13,18

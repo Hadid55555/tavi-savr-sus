@@ -1,0 +1,165 @@
+{
+ "R1": {
+  "SUS_TAVI_AIH_IDENT1": 1750,
+  "SUS_TAVI_AIH_IDENT5": 0,
+  "SUS_N_AIH_repetido": 0,
+  "TISS_IDs_repetidos_entre_arquivos": 0,
+  "TISS_TAVI_eventos": 6253,
+  "SUS_TAVI_com_CID_protese": 5,
+  "TISS_TAVI_com_CID_protese": 60,
+  "TISS_TAVI_com_CID_preenchido": 4909
+ },
+ "R2_todas_UFs": {
+  "SUS_sem_plano": {
+   "taxa": 29.6,
+   "ic95": [
+    27.6,
+    31.7
+   ]
+  },
+  "SUS_pop_total": {
+   "taxa": 22.2,
+   "ic95": [
+    20.7,
+    23.8
+   ]
+  },
+  "Planos_beneficiarios": {
+   "taxa": 201.5,
+   "ic95": [
+    192.4,
+    211.0
+   ]
+  },
+  "razao_planos_vs_SUS_sem_plano": {
+   "razao": 6.81,
+   "ic95": [
+    6.27,
+    7.4
+   ]
+  },
+  "razao_planos_vs_SUS_pop_total": {
+   "razao": 9.08,
+   "ic95": [
+    8.36,
+    9.86
+   ]
+  },
+  "especificas": {
+   "60-69": {
+    "SUS_n": 56,
+    "Planos_n": 107,
+    "SUS_pm_sem_plano": 3.6,
+    "SUS_pm_pop_total": 2.9,
+    "Planos_pm": 26.2
+   },
+   "70-79": {
+    "SUS_n": 330,
+    "Planos_n": 628,
+    "SUS_pm_sem_plano": 38.4,
+    "SUS_pm_pop_total": 29.5,
+    "Planos_pm": 241.9
+   },
+   "80+": {
+    "SUS_n": 429,
+    "Planos_n": 1119,
+    "SUS_pm_sem_plano": 108.1,
+    "SUS_pm_pop_total": 79.1,
+    "Planos_pm": 771.2
+   }
+  }
+ },
+ "R2_sem_CE_AP_RO": {
+  "SUS_sem_plano": {
+   "taxa": 27.2,
+   "ic95": [
+    25.2,
+    29.3
+   ]
+  },
+  "SUS_pop_total": {
+   "taxa": 20.2,
+   "ic95": [
+    18.8,
+    21.8
+   ]
+  },
+  "Planos_beneficiarios": {
+   "taxa": 205.3,
+   "ic95": [
+    196.0,
+    215.0
+   ]
+  },
+  "razao_planos_vs_SUS_sem_plano": {
+   "razao": 7.55,
+   "ic95": [
+    6.92,
+    8.23
+   ]
+  },
+  "razao_planos_vs_SUS_pop_total": {
+   "razao": 10.14,
+   "ic95": [
+    9.3,
+    11.06
+   ]
+  },
+  "especificas": {
+   "60-69": {
+    "SUS_n": 47,
+    "Planos_n": 105,
+    "SUS_pm_sem_plano": 3.2,
+    "SUS_pm_pop_total": 2.5,
+    "Planos_pm": 26.4
+   },
+   "70-79": {
+    "SUS_n": 286,
+    "Planos_n": 624,
+    "SUS_pm_sem_plano": 35.2,
+    "SUS_pm_pop_total": 26.8,
+    "Planos_pm": 246.3
+   },
+   "80+": {
+    "SUS_n": 376,
+    "Planos_n": 1114,
+    "SUS_pm_sem_plano": 100.1,
+    "SUS_pm_pop_total": 72.7,
+    "Planos_pm": 787.3
+   }
+  }
+ },
+ "R2_padrao_pesos": {
+  "60-69": 0.5497,
+  "70-79": 0.3027,
+  "80+": 0.1477
+ },
+ "R2_SUS_sem_UF_residencia": 0,
+ "R2_planos_sem_UF_residencia": 1,
+ "R4": {
+  "Gini_SUS": 0.469,
+  "Gini_Planos": 0.196,
+  "Theil_SUS": 0.432,
+  "Theil_Planos": 0.069,
+  "UFs_SUS_zero": 10,
+  "UFs_SUS_lt1": 11,
+  "UFs_SUS_lt5": 15,
+  "pct_pop60_sem_plano_em_UF_SUS_zero": 14.1,
+  "pct_pop60_sem_plano_em_UF_SUS_lt1": 21.6,
+  "pct_pop60_sem_plano_em_UF_SUS_lt5": 30.0
+ },
+ "R5": {
+  "pct_com_TAVI_ate_6m": 76.0,
+  "pct_com_TAVI_ate_12m": 80.0,
+  "pct_com_TAVI_ate_18m": 80.0,
+  "sem_nenhuma_TAVI_ate_ago2026": 3,
+  "ja_operavam_antes_mai2024": 6
+ },
+ "R6_centros_ativos": 18,
+ "R7": {
+  "menos75": 321,
+  "total": 1750,
+  "menos75_antes_mai2024": 2,
+  "menos75_urgencia": 115
+ }
+}

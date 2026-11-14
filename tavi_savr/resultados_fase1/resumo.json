@@ -1,0 +1,54 @@
+{
+ "arquivos_parciais": 1,
+ "registros": 272844,
+ "conferencia_2025_cmpt": {
+  "0406030162": {
+   "n_aqui": 819,
+   "n_levantamento": 819,
+   "obitos_aqui": 33,
+   "obitos_levantamento": 33,
+   "hosp_aqui": 21,
+   "hosp_levantamento": 21
+  },
+  "0406010692": {
+   "n_aqui": 7547,
+   "n_levantamento": 7547,
+   "obitos_aqui": 576,
+   "obitos_levantamento": 576,
+   "hosp_aqui": 207,
+   "hosp_levantamento": 207
+  },
+  "0406010820": {
+   "n_aqui": 2359,
+   "n_levantamento": 2359,
+   "obitos_aqui": 294,
+   "obitos_levantamento": 294,
+   "hosp_aqui": 194,
+   "hosp_levantamento": 194
+  },
+  "0406011206": {
+   "n_aqui": 1831,
+   "n_levantamento": 1831,
+   "obitos_aqui": 309,
+   "obitos_levantamento": 309,
+   "hosp_aqui": 184,
+   "hosp_levantamento": 184
+  },
+  "0406010846": {
+   "n_aqui": 443,
+   "n_levantamento": 443,
+   "obitos_aqui": 70,
+   "obitos_levantamento": 70,
+   "hosp_aqui": 96,
+   "hosp_levantamento": 96
+  },
+  "0406030111": {
+   "n_aqui": 178,
+   "n_levantamento": 178,
+   "obitos_aqui": 26,
+   "obitos_levantamento": 26,
+   "hosp_aqui": 39,
+   "hosp_levantamento": 39
+  }
+ }
+}

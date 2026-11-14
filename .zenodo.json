@@ -1,0 +1,12 @@
+{
+  "title": "Code and data for: Transcatheter aortic valve implantation in Brazil: a nationwide study of public and private health-sector hospitalizations, 2015–2025",
+  "upload_type": "software",
+  "description": "Code, pseudonymized analytic data and aggregated results to reproduce the tables, figures and supplementary tables of a nationwide study of transcatheter aortic valve implantation (TAVI) and surgical aortic valve replacement in Brazil's Unified Health System (SIH/SUS) and private health plans (ANS TISS), 2015–2025, with mortality (SIM), accreditation (CNES) and judicial-request (e-NatJus) data. All sources are public; hospital and hospitalization identifiers were replaced by meaningless codes.",
+  "creators": [
+    {"name": "Hadid, Leonardo", "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"}
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "keywords": ["transcatheter aortic valve implantation", "aortic valve replacement", "health care disparities", "Brazil", "SUS", "administrative data"],
+  "access_right": "open"
+}

@@ -1,0 +1,17 @@
+rotulo,pais,ano,tavi_por_milhao,fonte,estudo,chave,no_grafico,nota
+England (2022/23),England,2022/23,136.0,"national registries (UK TAVI Registry, NACSA)",Aktaa 2024,aktaa2024,1,SAVR 60/million
+Canada (2024),Canada,2024,136.9,CIHI hospital discharges,Servito 2026,servito2026,1,SAVR 66.5/million
+France (2019),France,2019,194.0,"PMSI (national hospital database); 13,030 TAVR / ~67 million",Nguyen 2022,nguyen2022,1,derived from published count and population
+Denmark (2020),Denmark,2020,155.8,national patient registry,Graversen 2023,graversen2023,1,AVR 242.5/million
+New Zealand (2018),New Zealand,2018,49.0,national registry,Wong 2021,wong2021,1,
+"ESC high-income countries, median (2023)",ESC members,2023,153.4,"ESC Atlas, national societies",Timmis 2024,timmis2024,1,IQR 99.8–210.3
+"ESC all members, median (2023)",ESC members,2023,91.5,ESC Atlas,Timmis 2024,timmis2024,1,IQR 9.6–170.9
+"ESC middle-income countries, median (2023)",ESC members,2023,4.0,ESC Atlas,Timmis 2024,timmis2024,1,IQR 0.9–12.9
+"Brazil, SUS + private plans (2025)",Brazil,2025,12.3,SIH/SUS + ANS TISS (this study),this study,,1,floor: self-pay and own-network plans not captured
+"Brazil, SUS only (2025)",Brazil,2025,3.8,SIH/SUS (this study),this study,,1,per million total population
+"Chile (2019–2023, approx.)",Chile,2019–23,,"public system, ≥75 only: 683 TAVI over 5 years (~80% of national TAVI)",Martínez 2026,martinez2026,0,rate not computable from the published data
+Spain (2023),Spain,2023,165.0,national hospital discharge database (CMBD),de la Torre-Hernández 2026,delatorre2026,1,regions 63–228 per million
+Australia (2021/22),Australia,2021/22,153.0,AIHW national hospital data,Ryan 2024,ryan2024hlc,1,SAVR 149 per million
+Poland (2019),Poland,2019,40.4,survey of all 23 TAVI centres,Dąbrowski 2021,dabrowski2021,1,
+Japan (2017),Japan,2017,32.0,"national inpatient database (DPC); 4,067 TAVI / ~127 million",Kamon 2020,kamon2020,1,derived from published count and population
+India (2018),India,2018,0.2,national interventional council survey; 308 TAVR / ~1.35 billion,Arramraju 2020,arramraju2020,1,derived from published count and population

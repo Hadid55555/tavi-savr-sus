@@ -1,0 +1,20 @@
+desfecho,modelo,variavel,IRR,IC95_inf,IC95_sup,p
+TAVI_SUS,NB2,cobertura_10pp,1.11,0.6,2.04,0.7482
+TAVI_SUS,NB2,centro_SUS_ativo,25.48,6.53,99.39,0.0
+TAVI_SUS,NB2,obitos_I35_70mais_100mil,1.08,0.97,1.22,0.1681
+TAVI_SUS,NB2,alpha (sobredispersão),1.04,0.29,1.79,0.0066
+TAVI_SUS,Poisson robusto,cobertura_10pp,1.47,0.9,2.39,0.1257
+TAVI_SUS,Poisson robusto,centro_SUS_ativo,23.96,8.04,71.44,0.0
+TAVI_SUS,Poisson robusto,obitos_I35_70mais_100mil,1.06,1.0,1.12,0.0597
+SAVR_SUS,NB2,cobertura_10pp,1.03,0.78,1.36,0.8544
+SAVR_SUS,NB2,centro_SUS_ativo,1.3,0.82,2.07,0.2672
+SAVR_SUS,NB2,obitos_I35_70mais_100mil,1.07,1.02,1.11,0.0069
+SAVR_SUS,NB2,alpha (sobredispersão),0.26,0.08,0.43,0.004
+SAVR_SUS,Poisson robusto,cobertura_10pp,0.99,0.88,1.12,0.9124
+SAVR_SUS,Poisson robusto,centro_SUS_ativo,1.28,0.89,1.85,0.1805
+SAVR_SUS,Poisson robusto,obitos_I35_70mais_100mil,1.08,1.06,1.1,0.0
+TAVI_Planos,NB2,cobertura_10pp,0.96,0.75,1.22,0.7233
+TAVI_Planos,NB2,obitos_I35_70mais_100mil,1.02,0.98,1.06,0.3327
+TAVI_Planos,NB2,alpha (sobredispersão),0.2,0.06,0.34,0.006
+TAVI_Planos,Poisson robusto,cobertura_10pp,0.83,0.73,0.95,0.0088
+TAVI_Planos,Poisson robusto,obitos_I35_70mais_100mil,1.02,0.99,1.04,0.1352

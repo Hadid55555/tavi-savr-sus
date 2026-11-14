@@ -1,0 +1,25 @@
+grupo,fonte,faixa,n,obitos,mort_pct
+Combinadas,ANS,60-69,486,37,7.6
+Combinadas,ANS,70-79,389,50,12.9
+Combinadas,ANS,80+,74,13,17.6
+Combinadas,ANS,<60,624,24,3.8
+Combinadas,SUS,60-69,2779,447,16.1
+Combinadas,SUS,70-79,2061,404,19.6
+Combinadas,SUS,80+,193,60,31.1
+Combinadas,SUS,<60,3438,322,9.4
+TAVI,ANS,60-69,190,5,2.6
+TAVI,ANS,70-79,1169,25,2.1
+TAVI,ANS,80+,2036,80,3.9
+TAVI,ANS,<60,43,1,2.3
+TAVI,SUS,60-69,70,1,1.4
+TAVI,SUS,70-79,458,15,3.3
+TAVI,SUS,80+,577,29,5.0
+TAVI,SUS,<60,17,0,0.0
+Troca valvar,ANS,60-69,2391,140,5.9
+Troca valvar,ANS,70-79,1833,146,8.0
+Troca valvar,ANS,80+,328,32,9.8
+Troca valvar,ANS,<60,3922,136,3.5
+Troca valvar,SUS,60-69,5512,494,9.0
+Troca valvar,SUS,70-79,3642,442,12.1
+Troca valvar,SUS,80+,324,41,12.7
+Troca valvar,SUS,<60,8078,432,5.3

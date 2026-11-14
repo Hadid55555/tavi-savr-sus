@@ -1,0 +1,21 @@
+grupo,fonte,regiao_res,n,dist_mediana_km,dist_p75_km,pct_mais_300km,pct_fora_uf
+SAVR aórtica,Planos,Centro-Oeste,71,0.0,215.0,16.0,13.0
+SAVR aórtica,Planos,Nordeste,171,0.0,19.0,8.0,12.0
+SAVR aórtica,Planos,Norte,51,0.0,8.0,18.0,8.0
+SAVR aórtica,Planos,Sudeste,633,10.0,33.0,4.0,4.0
+SAVR aórtica,Planos,Sul,148,0.0,32.0,2.0,3.0
+SAVR aórtica,SUS,Centro-Oeste,212,35.0,178.0,9.0,1.0
+SAVR aórtica,SUS,Nordeste,958,55.0,186.0,14.0,3.0
+SAVR aórtica,SUS,Norte,184,41.0,175.0,16.0,3.0
+SAVR aórtica,SUS,Sudeste,1734,21.0,58.0,1.0,1.0
+SAVR aórtica,SUS,Sul,1331,29.0,72.0,2.0,1.0
+TAVI,Planos,Centro-Oeste,162,0.0,174.0,14.0,12.0
+TAVI,Planos,Nordeste,250,0.0,36.0,9.0,11.0
+TAVI,Planos,Norte,25,0.0,304.0,28.0,20.0
+TAVI,Planos,Sudeste,1066,0.0,33.0,4.0,4.0
+TAVI,Planos,Sul,373,0.0,66.0,5.0,6.0
+TAVI,SUS,Centro-Oeste,10,6.0,296.0,30.0,0.0
+TAVI,SUS,Nordeste,143,26.0,149.0,6.0,1.0
+TAVI,SUS,Norte,2,1985.0,2299.0,100.0,100.0
+TAVI,SUS,Sudeste,497,18.0,63.0,3.0,1.0
+TAVI,SUS,Sul,176,99.0,242.0,12.0,0.0

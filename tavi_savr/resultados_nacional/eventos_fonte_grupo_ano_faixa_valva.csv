@@ -1,0 +1,580 @@
+fonte,grupo,ano,faixa,valva,n,obitos
+ANS,Combinadas,2015,60-69,aórtica,14,0
+ANS,Combinadas,2015,60-69,outra,11,1
+ANS,Combinadas,2015,60-69,sem CID valvar,135,3
+ANS,Combinadas,2015,70-79,aórtica,13,0
+ANS,Combinadas,2015,70-79,outra,6,1
+ANS,Combinadas,2015,70-79,sem CID valvar,100,10
+ANS,Combinadas,2015,80+,aórtica,4,1
+ANS,Combinadas,2015,80+,sem CID valvar,29,4
+ANS,Combinadas,2015,<60,aórtica,15,1
+ANS,Combinadas,2015,<60,outra,19,1
+ANS,Combinadas,2015,<60,sem CID valvar,141,3
+ANS,Combinadas,2015,ignorada,aórtica,2,1
+ANS,Combinadas,2015,ignorada,sem CID valvar,6,1
+ANS,Combinadas,2016,60-69,aórtica,24,3
+ANS,Combinadas,2016,60-69,outra,13,4
+ANS,Combinadas,2016,60-69,sem CID valvar,200,6
+ANS,Combinadas,2016,70-79,aórtica,29,4
+ANS,Combinadas,2016,70-79,outra,16,2
+ANS,Combinadas,2016,70-79,sem CID valvar,157,14
+ANS,Combinadas,2016,80+,aórtica,7,0
+ANS,Combinadas,2016,80+,outra,2,0
+ANS,Combinadas,2016,80+,sem CID valvar,35,5
+ANS,Combinadas,2016,<60,aórtica,26,2
+ANS,Combinadas,2016,<60,outra,28,0
+ANS,Combinadas,2016,<60,sem CID valvar,227,10
+ANS,Combinadas,2016,ignorada,outra,2,1
+ANS,Combinadas,2016,ignorada,sem CID valvar,14,1
+ANS,Combinadas,2017,60-69,aórtica,29,3
+ANS,Combinadas,2017,60-69,outra,20,1
+ANS,Combinadas,2017,60-69,sem CID valvar,279,17
+ANS,Combinadas,2017,70-79,aórtica,30,4
+ANS,Combinadas,2017,70-79,outra,9,0
+ANS,Combinadas,2017,70-79,sem CID valvar,198,19
+ANS,Combinadas,2017,80+,aórtica,15,4
+ANS,Combinadas,2017,80+,outra,5,0
+ANS,Combinadas,2017,80+,sem CID valvar,50,7
+ANS,Combinadas,2017,<60,aórtica,19,0
+ANS,Combinadas,2017,<60,outra,31,1
+ANS,Combinadas,2017,<60,sem CID valvar,263,9
+ANS,Combinadas,2017,ignorada,outra,2,0
+ANS,Combinadas,2017,ignorada,sem CID valvar,23,1
+ANS,Combinadas,2018,60-69,aórtica,21,0
+ANS,Combinadas,2018,60-69,outra,17,5
+ANS,Combinadas,2018,60-69,sem CID valvar,177,19
+ANS,Combinadas,2018,70-79,aórtica,42,3
+ANS,Combinadas,2018,70-79,outra,15,2
+ANS,Combinadas,2018,70-79,sem CID valvar,168,18
+ANS,Combinadas,2018,80+,aórtica,13,1
+ANS,Combinadas,2018,80+,outra,4,2
+ANS,Combinadas,2018,80+,sem CID valvar,33,3
+ANS,Combinadas,2018,<60,aórtica,25,0
+ANS,Combinadas,2018,<60,outra,36,2
+ANS,Combinadas,2018,<60,sem CID valvar,178,10
+ANS,Combinadas,2018,ignorada,aórtica,3,0
+ANS,Combinadas,2018,ignorada,sem CID valvar,15,0
+ANS,Combinadas,2019,60-69,aórtica,29,2
+ANS,Combinadas,2019,60-69,outra,30,1
+ANS,Combinadas,2019,60-69,sem CID valvar,258,15
+ANS,Combinadas,2019,70-79,aórtica,38,5
+ANS,Combinadas,2019,70-79,outra,23,3
+ANS,Combinadas,2019,70-79,sem CID valvar,178,20
+ANS,Combinadas,2019,80+,aórtica,9,2
+ANS,Combinadas,2019,80+,outra,3,1
+ANS,Combinadas,2019,80+,sem CID valvar,60,3
+ANS,Combinadas,2019,<60,aórtica,48,1
+ANS,Combinadas,2019,<60,outra,39,1
+ANS,Combinadas,2019,<60,sem CID valvar,237,10
+ANS,Combinadas,2019,ignorada,aórtica,1,0
+ANS,Combinadas,2019,ignorada,outra,2,0
+ANS,Combinadas,2019,ignorada,sem CID valvar,17,1
+ANS,Combinadas,2020,60-69,aórtica,29,1
+ANS,Combinadas,2020,60-69,outra,15,3
+ANS,Combinadas,2020,60-69,sem CID valvar,153,11
+ANS,Combinadas,2020,70-79,aórtica,28,2
+ANS,Combinadas,2020,70-79,outra,13,1
+ANS,Combinadas,2020,70-79,sem CID valvar,134,9
+ANS,Combinadas,2020,80+,aórtica,12,3
+ANS,Combinadas,2020,80+,outra,1,0
+ANS,Combinadas,2020,80+,sem CID valvar,27,6
+ANS,Combinadas,2020,<60,aórtica,20,0
+ANS,Combinadas,2020,<60,outra,39,1
+ANS,Combinadas,2020,<60,sem CID valvar,200,11
+ANS,Combinadas,2020,ignorada,aórtica,1,0
+ANS,Combinadas,2020,ignorada,outra,2,1
+ANS,Combinadas,2020,ignorada,sem CID valvar,12,0
+ANS,Combinadas,2021,60-69,aórtica,23,1
+ANS,Combinadas,2021,60-69,outra,23,1
+ANS,Combinadas,2021,60-69,sem CID valvar,171,12
+ANS,Combinadas,2021,70-79,aórtica,22,1
+ANS,Combinadas,2021,70-79,outra,18,3
+ANS,Combinadas,2021,70-79,sem CID valvar,130,19
+ANS,Combinadas,2021,80+,aórtica,4,1
+ANS,Combinadas,2021,80+,outra,3,0
+ANS,Combinadas,2021,80+,sem CID valvar,26,10
+ANS,Combinadas,2021,<60,aórtica,24,2
+ANS,Combinadas,2021,<60,outra,23,1
+ANS,Combinadas,2021,<60,sem CID valvar,230,17
+ANS,Combinadas,2021,ignorada,aórtica,2,0
+ANS,Combinadas,2021,ignorada,sem CID valvar,16,0
+ANS,Combinadas,2022,60-69,aórtica,36,2
+ANS,Combinadas,2022,60-69,outra,28,1
+ANS,Combinadas,2022,60-69,sem CID valvar,239,17
+ANS,Combinadas,2022,70-79,aórtica,34,5
+ANS,Combinadas,2022,70-79,outra,18,3
+ANS,Combinadas,2022,70-79,sem CID valvar,183,27
+ANS,Combinadas,2022,80+,aórtica,7,2
+ANS,Combinadas,2022,80+,outra,3,0
+ANS,Combinadas,2022,80+,sem CID valvar,41,5
+ANS,Combinadas,2022,<60,aórtica,25,0
+ANS,Combinadas,2022,<60,outra,33,1
+ANS,Combinadas,2022,<60,sem CID valvar,236,5
+ANS,Combinadas,2022,ignorada,sem CID valvar,13,0
+ANS,Combinadas,2023,60-69,aórtica,28,1
+ANS,Combinadas,2023,60-69,outra,24,1
+ANS,Combinadas,2023,60-69,sem CID valvar,283,15
+ANS,Combinadas,2023,70-79,aórtica,29,3
+ANS,Combinadas,2023,70-79,outra,19,3
+ANS,Combinadas,2023,70-79,sem CID valvar,209,16
+ANS,Combinadas,2023,80+,aórtica,6,1
+ANS,Combinadas,2023,80+,outra,5,2
+ANS,Combinadas,2023,80+,sem CID valvar,40,4
+ANS,Combinadas,2023,<60,aórtica,27,0
+ANS,Combinadas,2023,<60,outra,44,0
+ANS,Combinadas,2023,<60,sem CID valvar,269,18
+ANS,Combinadas,2023,ignorada,sem CID valvar,2,0
+ANS,Combinadas,2024,60-69,aórtica,15,0
+ANS,Combinadas,2024,60-69,outra,19,0
+ANS,Combinadas,2024,60-69,sem CID valvar,207,25
+ANS,Combinadas,2024,70-79,aórtica,31,6
+ANS,Combinadas,2024,70-79,outra,29,2
+ANS,Combinadas,2024,70-79,sem CID valvar,143,19
+ANS,Combinadas,2024,80+,aórtica,3,1
+ANS,Combinadas,2024,80+,outra,3,0
+ANS,Combinadas,2024,80+,sem CID valvar,35,8
+ANS,Combinadas,2024,<60,aórtica,27,0
+ANS,Combinadas,2024,<60,outra,36,2
+ANS,Combinadas,2024,<60,sem CID valvar,263,8
+ANS,Combinadas,2025,60-69,aórtica,32,3
+ANS,Combinadas,2025,60-69,outra,39,1
+ANS,Combinadas,2025,60-69,sem CID valvar,174,8
+ANS,Combinadas,2025,70-79,aórtica,15,3
+ANS,Combinadas,2025,70-79,outra,18,3
+ANS,Combinadas,2025,70-79,sem CID valvar,153,17
+ANS,Combinadas,2025,80+,outra,4,1
+ANS,Combinadas,2025,80+,sem CID valvar,29,3
+ANS,Combinadas,2025,<60,aórtica,25,1
+ANS,Combinadas,2025,<60,outra,58,2
+ANS,Combinadas,2025,<60,sem CID valvar,215,11
+ANS,TAVI,2017,70-79,sem CID valvar,1,0
+ANS,TAVI,2018,60-69,sem CID valvar,1,0
+ANS,TAVI,2018,80+,sem CID valvar,3,0
+ANS,TAVI,2019,60-69,aórtica,1,0
+ANS,TAVI,2019,70-79,aórtica,2,0
+ANS,TAVI,2019,70-79,sem CID valvar,1,0
+ANS,TAVI,2019,80+,aórtica,1,0
+ANS,TAVI,2019,<60,aórtica,1,0
+ANS,TAVI,2020,60-69,aórtica,1,0
+ANS,TAVI,2020,60-69,sem CID valvar,1,0
+ANS,TAVI,2020,70-79,aórtica,2,0
+ANS,TAVI,2020,70-79,sem CID valvar,3,0
+ANS,TAVI,2020,80+,aórtica,4,0
+ANS,TAVI,2020,80+,sem CID valvar,8,0
+ANS,TAVI,2021,60-69,aórtica,12,0
+ANS,TAVI,2021,60-69,outra,2,0
+ANS,TAVI,2021,60-69,sem CID valvar,12,0
+ANS,TAVI,2021,70-79,aórtica,61,2
+ANS,TAVI,2021,70-79,outra,2,0
+ANS,TAVI,2021,70-79,sem CID valvar,83,4
+ANS,TAVI,2021,80+,aórtica,106,5
+ANS,TAVI,2021,80+,outra,3,0
+ANS,TAVI,2021,80+,sem CID valvar,143,9
+ANS,TAVI,2021,<60,aórtica,6,0
+ANS,TAVI,2021,<60,sem CID valvar,5,0
+ANS,TAVI,2021,ignorada,aórtica,1,0
+ANS,TAVI,2022,60-69,aórtica,23,0
+ANS,TAVI,2022,60-69,outra,2,0
+ANS,TAVI,2022,60-69,sem CID valvar,39,0
+ANS,TAVI,2022,70-79,aórtica,144,1
+ANS,TAVI,2022,70-79,outra,5,0
+ANS,TAVI,2022,70-79,sem CID valvar,180,5
+ANS,TAVI,2022,80+,aórtica,242,6
+ANS,TAVI,2022,80+,outra,10,0
+ANS,TAVI,2022,80+,sem CID valvar,315,19
+ANS,TAVI,2022,<60,aórtica,6,0
+ANS,TAVI,2022,<60,sem CID valvar,9,0
+ANS,TAVI,2022,ignorada,aórtica,2,0
+ANS,TAVI,2022,ignorada,sem CID valvar,4,0
+ANS,TAVI,2023,60-69,aórtica,33,0
+ANS,TAVI,2023,60-69,outra,3,0
+ANS,TAVI,2023,60-69,sem CID valvar,41,1
+ANS,TAVI,2023,70-79,aórtica,212,6
+ANS,TAVI,2023,70-79,outra,7,0
+ANS,TAVI,2023,70-79,sem CID valvar,246,3
+ANS,TAVI,2023,80+,aórtica,368,11
+ANS,TAVI,2023,80+,outra,18,1
+ANS,TAVI,2023,80+,sem CID valvar,419,24
+ANS,TAVI,2023,<60,aórtica,3,0
+ANS,TAVI,2023,<60,outra,1,0
+ANS,TAVI,2023,<60,sem CID valvar,9,0
+ANS,TAVI,2023,ignorada,aórtica,1,0
+ANS,TAVI,2024,60-69,aórtica,35,0
+ANS,TAVI,2024,60-69,outra,2,0
+ANS,TAVI,2024,60-69,sem CID valvar,46,0
+ANS,TAVI,2024,70-79,aórtica,269,3
+ANS,TAVI,2024,70-79,outra,9,0
+ANS,TAVI,2024,70-79,sem CID valvar,263,8
+ANS,TAVI,2024,80+,aórtica,435,10
+ANS,TAVI,2024,80+,outra,9,0
+ANS,TAVI,2024,80+,sem CID valvar,473,16
+ANS,TAVI,2024,<60,aórtica,6,0
+ANS,TAVI,2024,<60,sem CID valvar,15,0
+ANS,TAVI,2024,ignorada,aórtica,3,0
+ANS,TAVI,2024,ignorada,sem CID valvar,3,0
+ANS,TAVI,2025,60-69,aórtica,39,0
+ANS,TAVI,2025,60-69,outra,1,0
+ANS,TAVI,2025,60-69,sem CID valvar,67,5
+ANS,TAVI,2025,70-79,aórtica,305,4
+ANS,TAVI,2025,70-79,outra,11,0
+ANS,TAVI,2025,70-79,sem CID valvar,312,10
+ANS,TAVI,2025,80+,aórtica,569,21
+ANS,TAVI,2025,80+,outra,12,0
+ANS,TAVI,2025,80+,sem CID valvar,538,33
+ANS,TAVI,2025,<60,aórtica,6,0
+ANS,TAVI,2025,<60,outra,1,0
+ANS,TAVI,2025,<60,sem CID valvar,15,1
+ANS,TAVI,2025,ignorada,sem CID valvar,1,0
+ANS,Troca valvar,2015,60-69,aórtica,80,2
+ANS,Troca valvar,2015,60-69,outra,54,5
+ANS,Troca valvar,2015,60-69,sem CID valvar,269,17
+ANS,Troca valvar,2015,70-79,aórtica,88,3
+ANS,Troca valvar,2015,70-79,outra,35,3
+ANS,Troca valvar,2015,70-79,sem CID valvar,240,19
+ANS,Troca valvar,2015,80+,aórtica,26,1
+ANS,Troca valvar,2015,80+,outra,17,2
+ANS,Troca valvar,2015,80+,sem CID valvar,95,10
+ANS,Troca valvar,2015,<60,aórtica,126,4
+ANS,Troca valvar,2015,<60,outra,131,2
+ANS,Troca valvar,2015,<60,sem CID valvar,505,14
+ANS,Troca valvar,2015,ignorada,aórtica,11,0
+ANS,Troca valvar,2015,ignorada,outra,9,0
+ANS,Troca valvar,2015,ignorada,sem CID valvar,40,3
+ANS,Troca valvar,2016,60-69,aórtica,103,1
+ANS,Troca valvar,2016,60-69,outra,84,1
+ANS,Troca valvar,2016,60-69,sem CID valvar,359,26
+ANS,Troca valvar,2016,70-79,aórtica,109,7
+ANS,Troca valvar,2016,70-79,outra,53,2
+ANS,Troca valvar,2016,70-79,sem CID valvar,323,25
+ANS,Troca valvar,2016,80+,aórtica,41,1
+ANS,Troca valvar,2016,80+,outra,11,2
+ANS,Troca valvar,2016,80+,sem CID valvar,140,13
+ANS,Troca valvar,2016,<60,aórtica,182,5
+ANS,Troca valvar,2016,<60,outra,219,3
+ANS,Troca valvar,2016,<60,sem CID valvar,763,28
+ANS,Troca valvar,2016,ignorada,aórtica,12,1
+ANS,Troca valvar,2016,ignorada,outra,14,3
+ANS,Troca valvar,2016,ignorada,sem CID valvar,43,4
+ANS,Troca valvar,2017,60-69,aórtica,125,2
+ANS,Troca valvar,2017,60-69,outra,106,2
+ANS,Troca valvar,2017,60-69,sem CID valvar,487,30
+ANS,Troca valvar,2017,70-79,aórtica,127,8
+ANS,Troca valvar,2017,70-79,outra,70,5
+ANS,Troca valvar,2017,70-79,sem CID valvar,437,45
+ANS,Troca valvar,2017,80+,aórtica,62,2
+ANS,Troca valvar,2017,80+,outra,12,2
+ANS,Troca valvar,2017,80+,sem CID valvar,188,23
+ANS,Troca valvar,2017,<60,aórtica,192,2
+ANS,Troca valvar,2017,<60,outra,225,1
+ANS,Troca valvar,2017,<60,sem CID valvar,933,29
+ANS,Troca valvar,2017,ignorada,aórtica,13,0
+ANS,Troca valvar,2017,ignorada,outra,12,1
+ANS,Troca valvar,2017,ignorada,sem CID valvar,46,3
+ANS,Troca valvar,2018,60-69,aórtica,134,5
+ANS,Troca valvar,2018,60-69,outra,123,9
+ANS,Troca valvar,2018,60-69,sem CID valvar,494,42
+ANS,Troca valvar,2018,70-79,aórtica,133,5
+ANS,Troca valvar,2018,70-79,outra,70,16
+ANS,Troca valvar,2018,70-79,sem CID valvar,421,34
+ANS,Troca valvar,2018,80+,aórtica,72,5
+ANS,Troca valvar,2018,80+,outra,19,1
+ANS,Troca valvar,2018,80+,sem CID valvar,172,23
+ANS,Troca valvar,2018,<60,aórtica,175,2
+ANS,Troca valvar,2018,<60,outra,226,5
+ANS,Troca valvar,2018,<60,sem CID valvar,894,32
+ANS,Troca valvar,2018,ignorada,aórtica,6,1
+ANS,Troca valvar,2018,ignorada,outra,10,0
+ANS,Troca valvar,2018,ignorada,sem CID valvar,44,2
+ANS,Troca valvar,2019,60-69,aórtica,191,3
+ANS,Troca valvar,2019,60-69,outra,98,6
+ANS,Troca valvar,2019,60-69,sem CID valvar,526,34
+ANS,Troca valvar,2019,70-79,aórtica,204,14
+ANS,Troca valvar,2019,70-79,outra,96,8
+ANS,Troca valvar,2019,70-79,sem CID valvar,459,47
+ANS,Troca valvar,2019,80+,aórtica,93,3
+ANS,Troca valvar,2019,80+,outra,17,2
+ANS,Troca valvar,2019,80+,sem CID valvar,166,17
+ANS,Troca valvar,2019,<60,aórtica,242,3
+ANS,Troca valvar,2019,<60,outra,307,8
+ANS,Troca valvar,2019,<60,sem CID valvar,854,30
+ANS,Troca valvar,2019,ignorada,aórtica,7,0
+ANS,Troca valvar,2019,ignorada,outra,12,0
+ANS,Troca valvar,2019,ignorada,sem CID valvar,38,3
+ANS,Troca valvar,2020,60-69,aórtica,134,3
+ANS,Troca valvar,2020,60-69,outra,84,4
+ANS,Troca valvar,2020,60-69,sem CID valvar,419,50
+ANS,Troca valvar,2020,70-79,aórtica,130,9
+ANS,Troca valvar,2020,70-79,outra,74,10
+ANS,Troca valvar,2020,70-79,sem CID valvar,336,35
+ANS,Troca valvar,2020,80+,aórtica,78,1
+ANS,Troca valvar,2020,80+,outra,16,1
+ANS,Troca valvar,2020,80+,sem CID valvar,143,16
+ANS,Troca valvar,2020,<60,aórtica,171,4
+ANS,Troca valvar,2020,<60,outra,220,5
+ANS,Troca valvar,2020,<60,sem CID valvar,759,40
+ANS,Troca valvar,2020,ignorada,aórtica,6,0
+ANS,Troca valvar,2020,ignorada,outra,8,1
+ANS,Troca valvar,2020,ignorada,sem CID valvar,28,1
+ANS,Troca valvar,2021,60-69,aórtica,181,6
+ANS,Troca valvar,2021,60-69,outra,103,11
+ANS,Troca valvar,2021,60-69,sem CID valvar,516,36
+ANS,Troca valvar,2021,70-79,aórtica,151,7
+ANS,Troca valvar,2021,70-79,outra,91,4
+ANS,Troca valvar,2021,70-79,sem CID valvar,401,56
+ANS,Troca valvar,2021,80+,aórtica,77,0
+ANS,Troca valvar,2021,80+,outra,27,7
+ANS,Troca valvar,2021,80+,sem CID valvar,135,20
+ANS,Troca valvar,2021,<60,aórtica,249,3
+ANS,Troca valvar,2021,<60,outra,274,9
+ANS,Troca valvar,2021,<60,sem CID valvar,925,35
+ANS,Troca valvar,2021,ignorada,aórtica,5,0
+ANS,Troca valvar,2021,ignorada,outra,2,0
+ANS,Troca valvar,2021,ignorada,sem CID valvar,38,4
+ANS,Troca valvar,2022,60-69,aórtica,228,8
+ANS,Troca valvar,2022,60-69,outra,151,12
+ANS,Troca valvar,2022,60-69,sem CID valvar,704,54
+ANS,Troca valvar,2022,70-79,aórtica,173,6
+ANS,Troca valvar,2022,70-79,outra,110,9
+ANS,Troca valvar,2022,70-79,sem CID valvar,552,45
+ANS,Troca valvar,2022,80+,aórtica,43,6
+ANS,Troca valvar,2022,80+,outra,11,0
+ANS,Troca valvar,2022,80+,sem CID valvar,115,16
+ANS,Troca valvar,2022,<60,aórtica,263,4
+ANS,Troca valvar,2022,<60,outra,284,3
+ANS,Troca valvar,2022,<60,sem CID valvar,1087,47
+ANS,Troca valvar,2022,ignorada,aórtica,11,0
+ANS,Troca valvar,2022,ignorada,outra,3,0
+ANS,Troca valvar,2022,ignorada,sem CID valvar,34,0
+ANS,Troca valvar,2023,60-69,aórtica,247,8
+ANS,Troca valvar,2023,60-69,outra,140,8
+ANS,Troca valvar,2023,60-69,sem CID valvar,742,49
+ANS,Troca valvar,2023,70-79,aórtica,208,12
+ANS,Troca valvar,2023,70-79,outra,121,11
+ANS,Troca valvar,2023,70-79,sem CID valvar,605,53
+ANS,Troca valvar,2023,80+,aórtica,32,0
+ANS,Troca valvar,2023,80+,outra,26,3
+ANS,Troca valvar,2023,80+,sem CID valvar,124,13
+ANS,Troca valvar,2023,<60,aórtica,245,7
+ANS,Troca valvar,2023,<60,outra,316,4
+ANS,Troca valvar,2023,<60,sem CID valvar,1302,40
+ANS,Troca valvar,2023,ignorada,aórtica,1,0
+ANS,Troca valvar,2023,ignorada,outra,1,0
+ANS,Troca valvar,2023,ignorada,sem CID valvar,2,0
+ANS,Troca valvar,2024,60-69,aórtica,239,10
+ANS,Troca valvar,2024,60-69,outra,143,9
+ANS,Troca valvar,2024,60-69,sem CID valvar,777,54
+ANS,Troca valvar,2024,70-79,aórtica,194,8
+ANS,Troca valvar,2024,70-79,outra,124,9
+ANS,Troca valvar,2024,70-79,sem CID valvar,606,49
+ANS,Troca valvar,2024,80+,aórtica,27,1
+ANS,Troca valvar,2024,80+,outra,22,2
+ANS,Troca valvar,2024,80+,sem CID valvar,108,17
+ANS,Troca valvar,2024,<60,aórtica,302,6
+ANS,Troca valvar,2024,<60,outra,319,4
+ANS,Troca valvar,2024,<60,sem CID valvar,1362,59
+ANS,Troca valvar,2024,ignorada,sem CID valvar,3,0
+ANS,Troca valvar,2025,60-69,aórtica,320,8
+ANS,Troca valvar,2025,60-69,outra,251,7
+ANS,Troca valvar,2025,60-69,sem CID valvar,661,52
+ANS,Troca valvar,2025,70-79,aórtica,238,9
+ANS,Troca valvar,2025,70-79,outra,158,5
+ANS,Troca valvar,2025,70-79,sem CID valvar,513,66
+ANS,Troca valvar,2025,80+,aórtica,42,1
+ANS,Troca valvar,2025,80+,outra,33,2
+ANS,Troca valvar,2025,80+,sem CID valvar,96,9
+ANS,Troca valvar,2025,<60,aórtica,474,9
+ANS,Troca valvar,2025,<60,outra,477,5
+ANS,Troca valvar,2025,<60,sem CID valvar,988,53
+ANS,Troca valvar,2025,ignorada,sem CID valvar,2,1
+SUS,Combinadas,2015,60-69,aórtica,201,26
+SUS,Combinadas,2015,60-69,outra/indeterminada,1096,181
+SUS,Combinadas,2015,70-79,aórtica,108,6
+SUS,Combinadas,2015,70-79,outra/indeterminada,732,178
+SUS,Combinadas,2015,80+,aórtica,20,6
+SUS,Combinadas,2015,80+,outra/indeterminada,108,26
+SUS,Combinadas,2015,<60,aórtica,362,35
+SUS,Combinadas,2015,<60,outra/indeterminada,1987,186
+SUS,Combinadas,2016,60-69,aórtica,180,12
+SUS,Combinadas,2016,60-69,outra/indeterminada,1062,176
+SUS,Combinadas,2016,70-79,aórtica,125,21
+SUS,Combinadas,2016,70-79,outra/indeterminada,806,177
+SUS,Combinadas,2016,80+,aórtica,20,2
+SUS,Combinadas,2016,80+,outra/indeterminada,100,18
+SUS,Combinadas,2016,<60,aórtica,337,36
+SUS,Combinadas,2016,<60,outra/indeterminada,2038,176
+SUS,Combinadas,2017,60-69,aórtica,175,20
+SUS,Combinadas,2017,60-69,outra/indeterminada,1013,143
+SUS,Combinadas,2017,70-79,aórtica,137,25
+SUS,Combinadas,2017,70-79,outra/indeterminada,779,167
+SUS,Combinadas,2017,80+,aórtica,28,7
+SUS,Combinadas,2017,80+,outra/indeterminada,114,25
+SUS,Combinadas,2017,<60,aórtica,344,29
+SUS,Combinadas,2017,<60,outra/indeterminada,1928,151
+SUS,Combinadas,2018,60-69,aórtica,205,22
+SUS,Combinadas,2018,60-69,outra/indeterminada,1112,152
+SUS,Combinadas,2018,70-79,aórtica,154,28
+SUS,Combinadas,2018,70-79,outra/indeterminada,766,142
+SUS,Combinadas,2018,80+,aórtica,24,6
+SUS,Combinadas,2018,80+,outra/indeterminada,123,23
+SUS,Combinadas,2018,<60,aórtica,358,24
+SUS,Combinadas,2018,<60,outra/indeterminada,1875,167
+SUS,Combinadas,2019,60-69,aórtica,222,25
+SUS,Combinadas,2019,60-69,outra/indeterminada,1133,166
+SUS,Combinadas,2019,70-79,aórtica,168,19
+SUS,Combinadas,2019,70-79,outra/indeterminada,844,154
+SUS,Combinadas,2019,80+,aórtica,23,3
+SUS,Combinadas,2019,80+,outra/indeterminada,125,39
+SUS,Combinadas,2019,<60,aórtica,350,21
+SUS,Combinadas,2019,<60,outra/indeterminada,1883,177
+SUS,Combinadas,2020,60-69,aórtica,160,25
+SUS,Combinadas,2020,60-69,outra/indeterminada,805,151
+SUS,Combinadas,2020,70-79,aórtica,135,20
+SUS,Combinadas,2020,70-79,outra/indeterminada,607,129
+SUS,Combinadas,2020,80+,aórtica,15,2
+SUS,Combinadas,2020,80+,outra/indeterminada,95,17
+SUS,Combinadas,2020,<60,aórtica,235,22
+SUS,Combinadas,2020,<60,outra/indeterminada,1314,140
+SUS,Combinadas,2021,60-69,aórtica,163,19
+SUS,Combinadas,2021,60-69,outra/indeterminada,772,113
+SUS,Combinadas,2021,70-79,aórtica,131,20
+SUS,Combinadas,2021,70-79,outra/indeterminada,591,151
+SUS,Combinadas,2021,80+,aórtica,19,8
+SUS,Combinadas,2021,80+,outra/indeterminada,65,20
+SUS,Combinadas,2021,<60,aórtica,239,14
+SUS,Combinadas,2021,<60,outra/indeterminada,1271,137
+SUS,Combinadas,2022,60-69,aórtica,163,14
+SUS,Combinadas,2022,60-69,outra/indeterminada,934,135
+SUS,Combinadas,2022,70-79,aórtica,152,23
+SUS,Combinadas,2022,70-79,outra/indeterminada,781,145
+SUS,Combinadas,2022,80+,aórtica,28,4
+SUS,Combinadas,2022,80+,outra/indeterminada,84,25
+SUS,Combinadas,2022,<60,aórtica,275,25
+SUS,Combinadas,2022,<60,outra/indeterminada,1327,134
+SUS,Combinadas,2023,60-69,aórtica,231,28
+SUS,Combinadas,2023,60-69,outra/indeterminada,1035,149
+SUS,Combinadas,2023,70-79,aórtica,176,26
+SUS,Combinadas,2023,70-79,outra/indeterminada,843,176
+SUS,Combinadas,2023,80+,aórtica,20,8
+SUS,Combinadas,2023,80+,outra/indeterminada,86,24
+SUS,Combinadas,2023,<60,aórtica,312,26
+SUS,Combinadas,2023,<60,outra/indeterminada,1481,128
+SUS,Combinadas,2024,60-69,aórtica,251,36
+SUS,Combinadas,2024,60-69,outra/indeterminada,1152,191
+SUS,Combinadas,2024,70-79,aórtica,186,27
+SUS,Combinadas,2024,70-79,outra/indeterminada,840,171
+SUS,Combinadas,2024,80+,aórtica,20,8
+SUS,Combinadas,2024,80+,outra/indeterminada,83,21
+SUS,Combinadas,2024,<60,aórtica,317,20
+SUS,Combinadas,2024,<60,outra/indeterminada,1430,149
+SUS,Combinadas,2025,60-69,aórtica,280,38
+SUS,Combinadas,2025,60-69,outra/indeterminada,1096,182
+SUS,Combinadas,2025,70-79,aórtica,193,32
+SUS,Combinadas,2025,70-79,outra/indeterminada,842,174
+SUS,Combinadas,2025,80+,aórtica,20,8
+SUS,Combinadas,2025,80+,outra/indeterminada,70,23
+SUS,Combinadas,2025,<60,aórtica,311,19
+SUS,Combinadas,2025,<60,outra/indeterminada,1380,134
+SUS,TAVI,2023,<60,outra/indeterminada,1,0
+SUS,TAVI,2024,60-69,aórtica,13,0
+SUS,TAVI,2024,60-69,outra/indeterminada,1,0
+SUS,TAVI,2024,70-79,aórtica,121,5
+SUS,TAVI,2024,70-79,outra/indeterminada,7,0
+SUS,TAVI,2024,80+,aórtica,143,9
+SUS,TAVI,2024,80+,outra/indeterminada,5,0
+SUS,TAVI,2024,<60,aórtica,4,0
+SUS,TAVI,2025,60-69,aórtica,54,1
+SUS,TAVI,2025,60-69,outra/indeterminada,2,0
+SUS,TAVI,2025,70-79,aórtica,326,10
+SUS,TAVI,2025,70-79,outra/indeterminada,4,0
+SUS,TAVI,2025,80+,aórtica,424,19
+SUS,TAVI,2025,80+,outra/indeterminada,5,1
+SUS,TAVI,2025,<60,aórtica,11,0
+SUS,TAVI,2025,<60,outra/indeterminada,2,0
+SUS,Troca valvar,2015,60-69,aórtica,876,70
+SUS,Troca valvar,2015,60-69,outra/indeterminada,890,141
+SUS,Troca valvar,2015,70-79,aórtica,663,55
+SUS,Troca valvar,2015,70-79,outra/indeterminada,489,89
+SUS,Troca valvar,2015,80+,aórtica,118,22
+SUS,Troca valvar,2015,80+,outra/indeterminada,57,19
+SUS,Troca valvar,2015,<60,aórtica,1327,57
+SUS,Troca valvar,2015,<60,outra/indeterminada,2748,185
+SUS,Troca valvar,2016,60-69,aórtica,953,74
+SUS,Troca valvar,2016,60-69,outra/indeterminada,879,111
+SUS,Troca valvar,2016,70-79,aórtica,733,73
+SUS,Troca valvar,2016,70-79,outra/indeterminada,463,80
+SUS,Troca valvar,2016,80+,aórtica,117,18
+SUS,Troca valvar,2016,80+,outra/indeterminada,51,10
+SUS,Troca valvar,2016,<60,aórtica,1325,66
+SUS,Troca valvar,2016,<60,outra/indeterminada,2527,177
+SUS,Troca valvar,2017,60-69,aórtica,917,66
+SUS,Troca valvar,2017,60-69,outra/indeterminada,901,107
+SUS,Troca valvar,2017,70-79,aórtica,726,67
+SUS,Troca valvar,2017,70-79,outra/indeterminada,478,72
+SUS,Troca valvar,2017,80+,aórtica,128,19
+SUS,Troca valvar,2017,80+,outra/indeterminada,52,14
+SUS,Troca valvar,2017,<60,aórtica,1280,78
+SUS,Troca valvar,2017,<60,outra/indeterminada,2532,182
+SUS,Troca valvar,2018,60-69,aórtica,1013,69
+SUS,Troca valvar,2018,60-69,outra/indeterminada,877,106
+SUS,Troca valvar,2018,70-79,aórtica,849,88
+SUS,Troca valvar,2018,70-79,outra/indeterminada,433,72
+SUS,Troca valvar,2018,80+,aórtica,126,21
+SUS,Troca valvar,2018,80+,outra/indeterminada,51,12
+SUS,Troca valvar,2018,<60,aórtica,1394,74
+SUS,Troca valvar,2018,<60,outra/indeterminada,2381,149
+SUS,Troca valvar,2019,60-69,aórtica,1111,65
+SUS,Troca valvar,2019,60-69,outra/indeterminada,934,116
+SUS,Troca valvar,2019,70-79,aórtica,867,91
+SUS,Troca valvar,2019,70-79,outra/indeterminada,511,66
+SUS,Troca valvar,2019,80+,aórtica,142,20
+SUS,Troca valvar,2019,80+,outra/indeterminada,51,14
+SUS,Troca valvar,2019,<60,aórtica,1423,63
+SUS,Troca valvar,2019,<60,outra/indeterminada,2693,187
+SUS,Troca valvar,2020,60-69,aórtica,759,40
+SUS,Troca valvar,2020,60-69,outra/indeterminada,729,93
+SUS,Troca valvar,2020,70-79,aórtica,587,47
+SUS,Troca valvar,2020,70-79,outra/indeterminada,385,63
+SUS,Troca valvar,2020,80+,aórtica,117,23
+SUS,Troca valvar,2020,80+,outra/indeterminada,52,13
+SUS,Troca valvar,2020,<60,aórtica,1007,44
+SUS,Troca valvar,2020,<60,outra/indeterminada,1795,114
+SUS,Troca valvar,2021,60-69,aórtica,816,52
+SUS,Troca valvar,2021,60-69,outra/indeterminada,738,112
+SUS,Troca valvar,2021,70-79,aórtica,662,75
+SUS,Troca valvar,2021,70-79,outra/indeterminada,404,68
+SUS,Troca valvar,2021,80+,aórtica,109,21
+SUS,Troca valvar,2021,80+,outra/indeterminada,29,3
+SUS,Troca valvar,2021,<60,aórtica,1058,45
+SUS,Troca valvar,2021,<60,outra/indeterminada,1954,136
+SUS,Troca valvar,2022,60-69,aórtica,1067,72
+SUS,Troca valvar,2022,60-69,outra/indeterminada,975,118
+SUS,Troca valvar,2022,70-79,aórtica,906,91
+SUS,Troca valvar,2022,70-79,outra/indeterminada,486,73
+SUS,Troca valvar,2022,80+,aórtica,126,14
+SUS,Troca valvar,2022,80+,outra/indeterminada,45,10
+SUS,Troca valvar,2022,<60,aórtica,1289,58
+SUS,Troca valvar,2022,<60,outra/indeterminada,2173,125
+SUS,Troca valvar,2023,60-69,aórtica,1352,74
+SUS,Troca valvar,2023,60-69,outra/indeterminada,1001,114
+SUS,Troca valvar,2023,70-79,aórtica,1015,91
+SUS,Troca valvar,2023,70-79,outra/indeterminada,622,105
+SUS,Troca valvar,2023,80+,aórtica,164,21
+SUS,Troca valvar,2023,80+,outra/indeterminada,58,11
+SUS,Troca valvar,2023,<60,aórtica,1439,67
+SUS,Troca valvar,2023,<60,outra/indeterminada,2342,142
+SUS,Troca valvar,2024,60-69,aórtica,1640,108
+SUS,Troca valvar,2024,60-69,outra/indeterminada,1176,155
+SUS,Troca valvar,2024,70-79,aórtica,1214,121
+SUS,Troca valvar,2024,70-79,outra/indeterminada,628,115
+SUS,Troca valvar,2024,80+,aórtica,125,13
+SUS,Troca valvar,2024,80+,outra/indeterminada,53,7
+SUS,Troca valvar,2024,<60,aórtica,1663,73
+SUS,Troca valvar,2024,<60,outra/indeterminada,2436,159
+SUS,Troca valvar,2025,60-69,aórtica,1528,103
+SUS,Troca valvar,2025,60-69,outra/indeterminada,1168,128
+SUS,Troca valvar,2025,70-79,aórtica,1128,100
+SUS,Troca valvar,2025,70-79,outra/indeterminada,672,106
+SUS,Troca valvar,2025,80+,aórtica,96,12
+SUS,Troca valvar,2025,80+,outra/indeterminada,50,9
+SUS,Troca valvar,2025,<60,aórtica,1667,71
+SUS,Troca valvar,2025,<60,outra/indeterminada,2312,129
