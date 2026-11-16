@@ -97,17 +97,27 @@ hosp = pd.read_csv(f"{R}/resultados_geografia/hospitais_sus_tavi_savr.csv")
 gj = json.load(open(f"{R}/dados_ref/br_states.geojson"))
 
 
-def mapa(ax, valores, titulo, vmax):
-    patches, cores = [], []
+from matplotlib.colors import BoundaryNorm, ListedColormap
+BOUNDS = [0.001, 5, 25, 100, 200, 400, 2000]
+CMAP = ListedColormap(plt.get_cmap("Blues")(np.linspace(0.18, 0.95, len(BOUNDS) - 1)))
+NORM = BoundaryNorm(BOUNDS, CMAP.N)
+
+
+def mapa(ax, valores, titulo):
+    patches, cores, zeros = [], [], []
     for ft in gj["features"]:
         g = ft["geometry"]
+        v = valores.get(ft["properties"]["sigla"], np.nan)
         for poly in (g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]):
-            patches.append(Polygon(np.array(poly[0]), closed=True))
-            cores.append(valores.get(ft["properties"]["sigla"], np.nan))
-    pc = PatchCollection(patches, cmap="Blues", edgecolor="white", linewidth=0.6)
+            p = np.array(poly[0])
+            (zeros if v == 0 else patches).append(Polygon(p, closed=True))
+            if v != 0:
+                cores.append(v)
+    pc = PatchCollection(patches, cmap=CMAP, norm=NORM, edgecolor="white", linewidth=0.6)
     pc.set_array(np.array(cores, dtype=float))
-    pc.set_clim(0, vmax)
     ax.add_collection(pc)
+    if zeros:
+        ax.add_collection(PatchCollection(zeros, facecolor="#e5e5e5", edgecolor="white", linewidth=0.6, hatch="////"))
     ax.set_xlim(-74.5, -34)
     ax.set_ylim(-34.5, 6)
     ax.set_aspect("equal")
@@ -116,15 +126,17 @@ def mapa(ax, valores, titulo, vmax):
     return pc
 
 
-fig, ax = plt.subplots(1, 2, figsize=(10, 5))
-vmax = 400
-mapa(ax[0], uf.TAVI_SUS_pm_padr.to_dict(), "A  SUS: TAVI per million without a plan", vmax)
-pc = mapa(ax[1], uf.TAVI_Planos_pm_padr.to_dict(), "B  Private plans: TAVI per million beneficiaries", vmax)
+fig, ax = plt.subplots(1, 2, figsize=(10, 5.3))
+mapa(ax[0], uf.TAVI_SUS_pm_padr.to_dict(), "A  SUS: TAVI per million without a plan")
+pc = mapa(ax[1], uf.TAVI_Planos_pm_padr.to_dict(), "B  Private plans: TAVI per million beneficiaries")
 h = hosp[hosp.TAVI_2024_2025 > 0]
 ax[0].scatter(h.longitude_estabelecimento_decimo_grau, h.latitude_estabelecimento_decimo_grau, s=6 + h.TAVI_2024_2025 / 3,
-              facecolors="none", edgecolors=PL, linewidths=1.2, label="SUS hospitals performing TAVI (size = volume 2024–25)")
-ax[0].legend(loc="lower left", fontsize=7)
-cb = fig.colorbar(pc, ax=ax, shrink=0.6, extend="max")
+              facecolors="none", edgecolors=PL, linewidths=1.3, label="SUS TAVI centres (size = volume 2024–25)")
+from matplotlib.patches import Patch
+ax[0].legend(handles=[ax[0].collections[-1], Patch(facecolor="#e5e5e5", hatch="////", edgecolor="#999999", label="No TAVI recorded")],
+             loc="upper left", bbox_to_anchor=(0.0, 0.02), fontsize=7.5, frameon=False, ncol=2)
+cb = fig.colorbar(pc, ax=ax, shrink=0.6, ticks=BOUNDS[:-1], spacing="uniform")
+cb.ax.set_yticklabels([">0", "5", "25", "100", "200", "400"])
 cb.set_label("TAVI per million, age ≥60, age-standardized, 2025")
 fig.savefig(f"{O}/Figure3.png", dpi=300, bbox_inches="tight")
 

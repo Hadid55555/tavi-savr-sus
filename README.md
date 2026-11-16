@@ -71,6 +71,7 @@ bash reproduce.sh
 | 12 | `tavi_savr/natjus_analise.py` | `resultados_judicializacao/`: e-NatJus judicial requests |
 | 13 | `tavi_savr/manuscrito/tabela1.py` | Table 1 |
 | 14 | `tavi_savr/manuscrito/figuras_tavi.py` | Figures 1–4 |
+| 15 | `tavi_savr/manuscrito/graphical_abstract.py` | Graphical abstract |
 
 Map from the manuscript's supplementary tables to files: S2 `resultados_nacional/nacional_ano_faixa.csv`; S3 and S5
 `resultados_auditoria/A2_A3_*`, `A3_*`; S4 `resultados_v2/resultados_v2.json`, `R2b_*`,
