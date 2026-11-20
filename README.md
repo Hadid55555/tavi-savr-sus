@@ -29,6 +29,7 @@ Folder and file names are in Portuguese, as in the original project; this README
 
 ```
 reproduce.sh                       runs every analysis in order
+docs/study_protocol.md             study protocol and analysis plan (with dated amendments)
 requirements.txt                   exact package versions
 tools/build_package_data.py        how the pseudonymized data in saida_tavi/ were built from the raw extracts
 saida_tavi/                        analytic data (pseudonymized, gzip CSV)
@@ -45,6 +46,11 @@ tavi_savr/                         analysis and extraction scripts
   resultados_*/                    aggregated results (CSV) produced by the scripts
   manuscrito/                      Table 1, international table (Table 2) and figure scripts; figuras/ = Figures 1–4
 ```
+
+## Study protocol
+
+The study protocol and statistical analysis plan (frozen 31 October 2026, with dated amendments) is in
+[`docs/study_protocol.md`](docs/study_protocol.md).
 
 ## How to reproduce
 
