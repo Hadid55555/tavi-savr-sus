@@ -101,3 +101,17 @@ dec = pd.DataFrame([{"SUS_bruta": bruta_sus, "Planos_bruta": bruta_pl, "razao_br
                      "pct_diferenca_bruta_devida_idade": 100 * (1 - (pad_pl - pad_sus) / (bruta_pl - bruta_sus))}]).round(2)
 dec.to_csv(f"{S}/decomposicao_sus_planos_2025.csv", index=False)
 print(dec.T)
+
+# ---------- estabilidade: retirar uma UF de cada vez (TAVI SUS, NB2) ----------
+loo = []
+for u in d.index:
+    dd = d.drop(index=u)
+    Xm = sm.add_constant(dd[X].astype(float))
+    try:
+        r = sm.NegativeBinomial(dd["TAVI_SUS"].astype(float), Xm, offset=np.log(dd["esp_TAVI_SUS"].astype(float))).fit(disp=0, maxiter=500)
+        loo.append({"uf_retirada": u, **{f"IRR_{v}": np.exp(r.params[v]) for v in X}})
+    except Exception as e:
+        loo.append({"uf_retirada": u, "erro": str(e)[:60]})
+loo = pd.DataFrame(loo).round(2)
+loo.to_csv(f"{S}/modelo_uf_retirando_uma_uf.csv", index=False)
+print(loo.describe().loc[["min", "max"]])

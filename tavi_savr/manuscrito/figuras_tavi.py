@@ -24,72 +24,81 @@ pad = pd.read_csv(f"{R}/resultados_auditoria/A2_A3_taxas_padronizadas_e_limites.
 
 # ---------- Figure 1: annual volume and standardized rates ----------
 a = nac[nac.ano.between(2015, 2025)].groupby("ano")[["TAVI_SUS", "TAVI_ANS", "SAVRaort_SUS", "SAVRaort_ANS_imput"]].sum()
-fig, ax = plt.subplots(1, 2, figsize=(10, 3.8))
-for col, cor, lab in [("TAVI_SUS", SUS, "TAVI, SUS"), ("TAVI_ANS", PL, "TAVI, private plans")]:
-    ax[0].plot(a.index, a[col], color=cor, lw=2, marker="o", ms=4, label=lab)
-for col, cor, lab in [("SAVRaort_SUS", SUS, "SAVR (aortic), SUS"), ("SAVRaort_ANS_imput", PL, "SAVR (aortic), plans*")]:
-    ax[0].plot(a.index, a[col], color=cor, lw=1.5, ls="--", label=lab)
+fig, ax = plt.subplots(1, 2, figsize=(10, 4.2))
+for col, cor, mk, lab in [("TAVI_SUS", SUS, "o", "TAVI, SUS"), ("TAVI_ANS", PL, "s", "TAVI, private plans")]:
+    ax[0].plot(a.index, a[col], color=cor, lw=2, marker=mk, ms=5, label=lab)
+for col, cor, mk, lab in [("SAVRaort_SUS", SUS, "o", "SAVR (aortic), SUS"), ("SAVRaort_ANS_imput", PL, "s", "SAVR (aortic), plans*")]:
+    ax[0].plot(a.index, a[col], color=cor, lw=1.5, ls="--", marker=mk, ms=4.5, mfc="white", label=lab)
+ymax = a.values.max() * 1.18
+for xe, txt in [(2021, "Plan coverage\n(DUT 143, Apr 2021)"), (2024, "SUS TAVI code\n(2023–24)")]:
+    ax[0].axvline(xe, color=INK2, lw=0.8, ls=":")
+    ax[0].text(xe - 0.12, ymax * 0.97, txt, ha="right", va="top", fontsize=7.5, color=INK2)
+ax[0].set_ylim(0, ymax)
 ax[0].set_title("A  Procedures per year", loc="left", fontweight="bold")
 ax[0].set_ylabel("Hospitalizations")
-ax[0].legend(fontsize=7.5, loc="upper left")
+ax[0].legend(fontsize=8, ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.12))
 ax[0].set_xticks(range(2015, 2026, 2))
 p = pad[pad.ano.between(2021, 2025)]
-ax[1].plot(p.ano, p.TAVI_SUS_por_sem_plano_padr60mais, color=SUS, lw=2, marker="o", ms=4, label="SUS (per million without a plan)")
-ax[1].plot(p.ano, p.TAVI_ANS_por_beneficiario_padr60mais, color=PL, lw=2, marker="o", ms=4, label="Private plans (per million beneficiaries)")
+ax[1].plot(p.ano, p.TAVI_SUS_por_sem_plano_padr60mais, color=SUS, lw=2, marker="o", ms=5, label="SUS (per million without a plan)")
+ax[1].plot(p.ano, p.TAVI_ANS_por_beneficiario_padr60mais, color=PL, lw=2, marker="s", ms=5, label="Private plans (per million beneficiaries)")
 for _, r in p[p.ano == 2025].iterrows():
-    ax[1].annotate(f"{r.TAVI_SUS_por_sem_plano_padr60mais:.0f}", (2025, r.TAVI_SUS_por_sem_plano_padr60mais), xytext=(5, 0),
-                   textcoords="offset points", va="center", color=INK)
-    ax[1].annotate(f"{r.TAVI_ANS_por_beneficiario_padr60mais:.0f}", (2025, r.TAVI_ANS_por_beneficiario_padr60mais), xytext=(5, 0),
-                   textcoords="offset points", va="center", color=INK)
+    for v in [r.TAVI_SUS_por_sem_plano_padr60mais, r.TAVI_ANS_por_beneficiario_padr60mais]:
+        ax[1].annotate(f"{v:.0f}", (2025, v), xytext=(6, 0), textcoords="offset points", va="center", color=INK, fontweight="bold")
 ax[1].set_title("B  TAVI per million, age ≥60, age-standardized", loc="left", fontweight="bold")
 ax[1].set_xticks(range(2021, 2026))
-ax[1].set_xlim(2020.7, 2025.6)
-ax[1].legend(fontsize=7.5, loc="upper left")
+ax[1].set_xlim(2020.7, 2025.7)
+ax[1].legend(fontsize=8, loc="upper left")
 fig.tight_layout()
 fig.savefig(f"{O}/Figure1.png", dpi=300)
 
-# ---------- Figure 2: age ----------
+# ---------- Figure 2: age (A rates, B % TAVI); Supplementary Figure S2: age distribution ----------
 F = ["60-69", "70-79", "80+"]
 n25 = nac[(nac.ano == 2025) & nac.faixa.isin(F)].set_index("faixa")
 pct = pd.read_csv(f"{R}/resultados_auditoria/A3_pct_TAVI_2025_limites.csv").set_index("faixa")
 dist = pd.read_csv(f"{R}/resultados_nacional/distribuicao_etaria_pct.csv")
-fig, ax = plt.subplots(1, 3, figsize=(12, 3.8), gridspec_kw={"width_ratios": [1, 1, 1.3]})
+fig, ax = plt.subplots(1, 2, figsize=(10, 4))
 x = np.arange(3)
-for i, (col, cor, lab) in enumerate([("TAVI_SUS_pm_dep", SUS, "SUS"), ("TAVI_ANS_pm_benef", PL, "Private plans")]):
+for i, (col, cor, hat, lab) in enumerate([("TAVI_SUS_pm_dep", SUS, None, "SUS"), ("TAVI_ANS_pm_benef", PL, "///", "Private plans")]):
     v = n25[col].values
-    b = ax[0].bar(x + (i - 0.5) * 0.38, v, 0.36, color=cor, label=lab)
-    ax[0].bar_label(b, fmt="%.0f", fontsize=7.5, padding=2, color=INK)
+    b = ax[0].bar(x + (i - 0.5) * 0.38, v, 0.36, color=cor, hatch=hat, edgecolor="white", label=lab)
+    ax[0].bar_label(b, fmt="%.0f", fontsize=8, padding=2, color=INK)
 ax[0].set_xticks(x, ["60–69", "70–79", "≥80"])
 ax[0].set_title("A  TAVI per million, 2025", loc="left", fontweight="bold")
 ax[0].set_xlabel("Age (years)")
-ax[0].legend(fontsize=7.5)
-ax[1].bar(x - 0.19, pct.SUS.values, 0.36, color=SUS, label="SUS")
-ax[1].bar(x + 0.19, pct.central.values, 0.36, color=PL, label="Private plans (central)")
+ax[0].legend(fontsize=8)
+ax[1].bar(x - 0.19, pct.SUS.values, 0.36, color=SUS, edgecolor="white", label="SUS")
+ax[1].bar(x + 0.19, pct.central.values, 0.36, color=PL, hatch="///", edgecolor="white", label="Private plans (central; whiskers = bounds)")
 ax[1].errorbar(x + 0.19, pct.central.values, yerr=[pct.central.values - pct.superior.values, pct.inferior.values - pct.central.values],
                fmt="none", ecolor=INK, capsize=3, lw=1)
 for xi, v in zip(x - 0.19, pct.SUS.values):
-    ax[1].text(xi, v + 2, f"{v:.0f}%", ha="center", fontsize=7.5)
+    ax[1].text(xi, v + 2, f"{v:.0f}%", ha="center", fontsize=8)
 for xi, v, c in zip(x + 0.19, pct.inferior.values, pct.central.values):
-    ax[1].text(xi, v + 2, f"{c:.0f}%", ha="center", fontsize=7.5)
+    ax[1].text(xi, v + 2, f"{c:.0f}%", ha="center", fontsize=8)
 ax[1].set_xticks(x, ["60–69", "70–79", "≥80"])
-ax[1].set_ylim(0, 108)
+ax[1].set_ylim(0, 110)
 ax[1].set_title("B  TAVI as % of aortic AVR, 2025", loc="left", fontweight="bold")
 ax[1].set_xlabel("Age (years)")
-ax[1].legend(fontsize=7.5, loc="upper left")
+ax[1].legend(fontsize=8, loc="upper left")
+fig.tight_layout()
+fig.savefig(f"{O}/Figure2.png", dpi=300)
+
+fig, ax2 = plt.subplots(figsize=(7, 4))
 d = dist[dist.grupo.eq("TAVI") & ((dist.fonte.eq("ANS") & dist.ano.between(2021, 2025)) | (dist.fonte.eq("SUS") & dist.ano.between(2024, 2025)))]
 rot = [f"Plans\n{a}" if f == "ANS" else f"SUS\n{a}" for f, a in zip(d.fonte, d.ano)]
 base = np.zeros(len(d))
 cores = {"<60": "#e6e5e0", "60-69": "#9ec5f0", "70-79": "#2a78d6", "80+": "#163f74"}
 for k, lab in [("<60", "<60"), ("60-69", "60–69"), ("70-79", "70–79"), ("80+", "≥80")]:
-    ax[2].bar(range(len(d)), d[k].values, bottom=base, color=cores[k], label=lab, edgecolor="white", linewidth=1)
+    bb = ax2.bar(range(len(d)), d[k].values, bottom=base, color=cores[k], label=lab, edgecolor="white", linewidth=1)
+    if k in ("70-79", "80+"):
+        ax2.bar_label(bb, labels=[f"{v:.0f}" for v in d[k].values], label_type="center", fontsize=7.5, color="white")
     base += d[k].values
-ax[2].set_xticks(range(len(d)), rot, fontsize=7.5)
-ax[2].set_ylabel("% of TAVI")
-ax[2].set_title("C  Age distribution of TAVI", loc="left", fontweight="bold")
-ax[2].legend(fontsize=7.5, ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.18))
-ax[2].grid(False)
+ax2.set_xticks(range(len(d)), rot, fontsize=8)
+ax2.set_ylabel("% of TAVI")
+ax2.set_title("Age distribution of TAVI by payer and year", loc="left", fontweight="bold")
+ax2.legend(fontsize=8, ncol=4, loc="upper center", bbox_to_anchor=(0.5, -0.16), title="Age (years)", title_fontsize=8)
+ax2.grid(False)
 fig.tight_layout()
-fig.savefig(f"{O}/Figure2.png", dpi=300)
+fig.savefig(f"{O}/FigureS2.png", dpi=300)
 
 # ---------- Figure 3: maps ----------
 uf = pd.read_csv(f"{R}/resultados_geografia/taxas_uf_residencia_2025_padronizadas.csv").set_index("uf")
@@ -140,16 +149,42 @@ cb.ax.set_yticklabels([">0", "5", "25", "100", "200", "400"])
 cb.set_label("TAVI per million, age ≥60, age-standardized, 2025")
 fig.savefig(f"{O}/Figure3.png", dpi=300, bbox_inches="tight")
 
-# ---------- Figure 4: international ----------
+# ---------- Figure 4: international context ----------
 intl = pd.read_csv(os.path.join(R, "manuscrito", "tabela_internacional.csv"))
-intl = intl[intl.no_grafico.eq(1)].sort_values("tavi_por_milhao")
-fig, ax = plt.subplots(figsize=(7.5, 4))
-cor = [SUS if "Brazil" in s else GR for s in intl.rotulo]
-b = ax.barh(intl.rotulo, intl.tavi_por_milhao, color=cor, height=0.6)
-ax.bar_label(b, labels=[f"{v:.1f}" if v < 1 else f"{v:.0f}" for v in intl.tavi_por_milhao], padding=3, fontsize=8)
+ref = intl[intl.grupo.str.startswith("Reference")].set_index("rotulo").tavi_por_milhao
+bars = intl[intl.no_grafico.eq(1) & ~intl.grupo.str.startswith("Reference")]
+ordem = ["High-income countries", "High-income countries, earlier adoption", "Brazil (this study)"]
+rows, ys, y = [], [], 0
+gy = {}
+for g in ordem:
+    sub = bars[bars.grupo.eq(g)].sort_values("tavi_por_milhao", ascending=False)
+    gy[g] = y
+    y += 0.9
+    for _, r in sub.iterrows():
+        rows.append(r)
+        ys.append(y)
+        y += 1
+    y += 0.4
+rows = pd.DataFrame(rows)
+fig, ax = plt.subplots(figsize=(7.5, 5.2))
+cor = ["#163f74" if "SUS +" in s else SUS if "SUS only" in s else GR for s in rows.rotulo]
+b = ax.barh(ys, rows.tavi_por_milhao, color=cor, height=0.7)
+ax.bar_label(b, labels=[f"{v:.1f}" if v < 20 else f"{v:.0f}" for v in rows.tavi_por_milhao], padding=3, fontsize=8.5)
+ax.set_yticks(ys, rows.rotulo, fontsize=8.5)
+for g, yy in gy.items():
+    ax.text(-0.01, yy, g.replace(", earlier adoption", ": earlier adoption"), transform=ax.get_yaxis_transform(), ha="right",
+            va="center", fontsize=8.5, fontweight="bold", color=INK)
+ax.invert_yaxis()
+hi = ref.filter(like="high-income").iloc[0]
+mi = ref.filter(like="middle-income").iloc[0]
+for v, txt in [(hi, f"ESC high-income median {hi:.0f}"), (mi, f"ESC middle-income median {mi:.0f}")]:
+    ax.axvline(v, color=INK2, lw=1, ls="--")
+    ax.text(v + 2, ys[-1] + 0.9 if v < 50 else -0.2, txt, fontsize=7.5, color=INK2, va="center")
 ax.set_xlabel("TAVI per million inhabitants (total population)")
+ax.set_title("International context: TAVI per million inhabitants", loc="left", fontweight="bold")
 ax.grid(axis="y", visible=False)
-ax.set_xlim(0, intl.tavi_por_milhao.max() * 1.12)
+ax.set_xlim(0, rows.tavi_por_milhao.max() * 1.15)
+ax.set_ylim(ys[-1] + 1.5, -0.9)
 fig.tight_layout()
-fig.savefig(f"{O}/Figure4.png", dpi=300)
+fig.savefig(f"{O}/Figure4.png", dpi=300, bbox_inches="tight")
 print("ok")

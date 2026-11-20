@@ -41,7 +41,8 @@ def pct(m):
 
 
 def faixas_sus(x):
-    return {"<60": x < 60, "60–69": x.between(60, 69), "70–74": x.between(70, 74), "75–79": x.between(75, 79), "≥80": x >= 80}
+    return {"<60": x < 60, "60–69": x.between(60, 69), "70–79": x.between(70, 79), "  70–74 (SUS only)": x.between(70, 74),
+            "  75–79 (SUS only)": x.between(75, 79), "≥80": x >= 80}
 
 
 cols = {}
@@ -50,10 +51,9 @@ for g in ["TAVI", "SAVR"]:
     r = {"Hospitalizations, n": f"{len(s):,}",
          "Age, median (IQR), years": f"{s.idade.median():.0f} ({s.idade.quantile(.25):.0f}–{s.idade.quantile(.75):.0f})"}
     for k, m in faixas_sus(s.idade).items():
-        r[f"Age {k}, n (%)"] = pct(m)
+        r[f"Age {k.strip()}, n (%)"] = pct(m)
     r["Female, n (%)"] = pct(s.SEXO.isin(["3", "2"]))
     r["Urgent admission, n (%)"] = pct(s.CAR_INT.ne("01"))
-    r["Principal diagnosis I35 (non-rheumatic), n (%)"] = pct(s.DIAG_PRINC.str.startswith("I35"))
     r["Principal diagnosis I35.0 (aortic stenosis), n (%)"] = pct(s.DIAG_PRINC.str.startswith("I350"))
     r["Principal diagnosis I06 (rheumatic), n (%)"] = pct(s.DIAG_PRINC.str.startswith("I06"))
     r["Length of stay, median (IQR), days"] = (f"{pd.to_numeric(s.DIAS_PERM).median():.0f} "
@@ -65,11 +65,11 @@ for g in ["TAVI", "SAVR"]:
     t = ti[ti.g.eq(g)]
     f = fx[t.index] if False else t.FAIXA_ETARIA.str.extract(r"^(\d+)")[0].astype(float)
     r = {"Hospitalizations, n": f"{len(t):,}", "Age, median (IQR), years": "n/a (10-year bands)"}
-    for k, m in {"<60": f < 60, "60–69": f.eq(60), "70–74": None, "75–79": None, "≥80": f >= 80}.items():
-        r[f"Age {k}, n (%)"] = pct(m) if m is not None else ("70–79: " + pct(f.eq(70)) if k == "70–74" else "")
+    for k, m in {"<60": f < 60, "60–69": f.eq(60), "70–79": f.eq(70), "  70–74 (SUS only)": None, "  75–79 (SUS only)": None,
+                 "≥80": f >= 80}.items():
+        r[f"Age {k.strip()}, n (%)"] = pct(m) if m is not None else "—"
     r["Female, n (%)"] = pct(t.SEXO.str.upper().str.startswith("F"))
     r["Urgent admission, n (%)"] = pct(t.CD_CARATER_ATENDIMENTO.str.strip().eq("2"))
-    r["Principal diagnosis I35 (non-rheumatic), n (%)"] = pct(t.CID_1.str.strip().str.upper().str.startswith("I35"))
     r["Principal diagnosis I35.0 (aortic stenosis), n (%)"] = pct(t.CID_1.str.strip().str.upper().str.startswith("I350"))
     r["Principal diagnosis I06 (rheumatic), n (%)"] = pct(t.CID_1.str.strip().str.upper().str.startswith("I06"))
     lp = pd.to_numeric(t.TEMPO_DE_PERMANENCIA, errors="coerce")

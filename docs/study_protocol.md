@@ -2,7 +2,7 @@
 title: "Study protocol and statistical analysis plan — Transcatheter aortic valve implantation in Brazil's public and private health sectors, 2015–2025"
 ---
 
-*English translation of the analysis plan frozen on 31 October 2026 (original in Portuguese: `tavi_savr/PLANO_ANALISE_v1.md`), with dated amendments. Prepared 16 November 2026.*
+*English translation of the analysis plan frozen on 31 October 2026 (original in Portuguese: `tavi_savr/PLANO_ANALISE_v1.md`), with dated amendments. Prepared 16 November 2026; updated 20 November 2026.*
 
 # 1. Objectives
 
@@ -57,6 +57,7 @@ Continuously reporting plans (2021–2025); June vs December beneficiaries; valv
 - **5 Nov 2026** (internal review): payer ratio by tertile of state plan coverage (overlap of denominators).
 - **13 Nov 2026:** age-standardized aortic stenosis mortality with the definition of Siddiqi et al. 2026 (I35.0, I35.2, I06.0, I06.2 as underlying or contributing cause; ≥45 years; 2000 US standard population), average annual percent change by log-linear regression.
 - **14 Nov 2026:** hospital location approximated by the centroid of the hospital's municipality (as residence), for the public data package without establishment coordinates; the CIHA (self-pay) was not used in the main analyses.
+- **20 Nov 2026** (after fourth external review), planned analyses not executed or modified: (i) CIHA (self-pay) analyses were not executed; (ii) SAVR including I71 is reported only as counts of multiple-surgery hospitalizations (audit A1), not as rates; (iii) exclusion of TAVI <75 years was feasible only for the SUS, because TISS reports age in 10-year bands (70–79); (iv) Poisson with robust errors for the state model is reported in Supplementary Table S16. Added: leave-one-state-out estimates for the negative binomial model; audit of the SIGTAP TAVI code transition (04.06.01.152-4 to 04.06.03.016-2; month of switch and hospitalizations with both codes, Supplementary Table S21); SUS TAVI below 75 years split into <70 and 70–74 years.
 
 # 7. Ethics and data
 
