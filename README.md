@@ -2,7 +2,7 @@
 
 This repository contains the code, the pseudonymized analytic data and the aggregated results needed to reproduce the
 tables, figures and supplementary tables of the manuscript *"Transcatheter aortic valve implantation in Brazil: a
-nationwide study of public and private health-sector hospitalizations, 2015–2025"* (Hadid L, et al.; manuscript in
+nationwide study of public and private health-sector hospitalizations, 2015–2025"* (Hadid L, Salek L, Passos FS, Caldonazo T; manuscript in
 preparation).
 
 The study describes how transcatheter aortic valve implantation (TAVI) was incorporated in Brazil's Unified Health

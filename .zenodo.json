@@ -3,10 +3,32 @@
   "upload_type": "software",
   "description": "Code, pseudonymized analytic data and aggregated results to reproduce the tables, figures and supplementary tables of a nationwide study of transcatheter aortic valve implantation (TAVI) and surgical aortic valve replacement in Brazil's Unified Health System (SIH/SUS) and private health plans (ANS TISS), 2015–2025, with mortality (SIM), accreditation (CNES) and judicial-request (e-NatJus) data. All sources are public; hospital and hospitalization identifiers were replaced by meaningless codes.",
   "creators": [
-    {"name": "Hadid, Leonardo", "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"}
+    {
+      "name": "Hadid, Leonardo",
+      "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+    },
+    {
+      "name": "Salek, Luísa",
+      "affiliation": "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+    },
+    {
+      "name": "Passos, Felipe S.",
+      "affiliation": "Department of Thoracic Surgery, Hospital MaterDei, Salvador, Brazil"
+    },
+    {
+      "name": "Caldonazo, Tulio",
+      "affiliation": "Department of Cardiothoracic Surgery, Jena University Hospital, Friedrich-Schiller-University Jena, Jena, Germany"
+    }
   ],
   "license": "MIT",
   "version": "1.0.0",
-  "keywords": ["transcatheter aortic valve implantation", "aortic valve replacement", "health care disparities", "Brazil", "SUS", "administrative data"],
+  "keywords": [
+    "transcatheter aortic valve implantation",
+    "aortic valve replacement",
+    "health care disparities",
+    "Brazil",
+    "SUS",
+    "administrative data"
+  ],
   "access_right": "open"
 }

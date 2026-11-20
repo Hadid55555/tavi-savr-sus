@@ -7,6 +7,15 @@ authors:
   - family-names: Hadid
     given-names: Leonardo
     affiliation: "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+  - family-names: Salek
+    given-names: Luísa
+    affiliation: "Instituto Nacional de Cardiologia, Rio de Janeiro, Brazil"
+  - family-names: Passos
+    given-names: Felipe S.
+    affiliation: "Department of Thoracic Surgery, Hospital MaterDei, Salvador, Brazil"
+  - family-names: Caldonazo
+    given-names: Tulio
+    affiliation: "Department of Cardiothoracic Surgery, Jena University Hospital, Friedrich-Schiller-University Jena, Jena, Germany"
 repository-code: "https://github.com/Hadid55555/tavi-savr-sus"
 keywords:
   - transcatheter aortic valve implantation
