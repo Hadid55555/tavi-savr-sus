@@ -14,10 +14,12 @@ from matplotlib.patches import Polygon
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 O = os.path.join(R, "manuscrito", "figuras")
 os.makedirs(O, exist_ok=True)
-SUS, PL, GR, INK, INK2 = "#2a78d6", "#eb6834", "#c9c8c2", "#0b0b0b", "#52514e"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9, "axes.edgecolor": INK2, "axes.labelcolor": INK,
+# Paleta Lancet (ggsci "lancet"): SUS navy, planos vermelho, neutros cinza-azulado; Liberation Sans (métrica Arial)
+SUS, PL, GR, INK, INK2 = "#00468B", "#ED0000", "#ADB6B6", "#1B1B1B", "#5B6770"
+NAVY_D = "#002B55"
+plt.rcParams.update({"font.family": "Liberation Sans", "font.size": 9, "axes.edgecolor": INK2, "axes.labelcolor": INK,
                      "xtick.color": INK2, "ytick.color": INK2, "axes.spines.top": False, "axes.spines.right": False,
-                     "axes.grid": True, "grid.color": "#e6e5e0", "grid.linewidth": 0.6, "axes.axisbelow": True,
+                     "axes.grid": True, "axes.grid.axis": "y", "grid.color": "#E5E8EA", "grid.linewidth": 0.6, "axes.axisbelow": True,
                      "legend.frameon": False})
 nac = pd.read_csv(f"{R}/resultados_nacional/nacional_ano_faixa.csv")
 pad = pd.read_csv(f"{R}/resultados_auditoria/A2_A3_taxas_padronizadas_e_limites.csv")
@@ -39,7 +41,7 @@ ax[0].set_ylabel("Hospitalizations")
 ax[0].legend(fontsize=8, ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.12))
 ax[0].set_xticks(range(2015, 2026, 2))
 p = pad[pad.ano.between(2021, 2025)]
-ax[1].plot(p.ano, p.TAVI_SUS_por_sem_plano_padr60mais, color=SUS, lw=2, marker="o", ms=5, label="SUS (per million without a plan)")
+ax[1].plot(p.ano, p.TAVI_SUS_por_sem_plano_padr60mais, color=SUS, lw=2, marker="o", ms=5, label="SUS (per million without plan coverage)")
 ax[1].plot(p.ano, p.TAVI_ANS_por_beneficiario_padr60mais, color=PL, lw=2, marker="s", ms=5, label="Private plans (per million beneficiaries)")
 for _, r in p[p.ano == 2025].iterrows():
     for v in [r.TAVI_SUS_por_sem_plano_padr60mais, r.TAVI_ANS_por_beneficiario_padr60mais]:
@@ -86,7 +88,7 @@ fig, ax2 = plt.subplots(figsize=(7, 4))
 d = dist[dist.grupo.eq("TAVI") & ((dist.fonte.eq("ANS") & dist.ano.between(2021, 2025)) | (dist.fonte.eq("SUS") & dist.ano.between(2024, 2025)))]
 rot = [f"Plans\n{a}" if f == "ANS" else f"SUS\n{a}" for f, a in zip(d.fonte, d.ano)]
 base = np.zeros(len(d))
-cores = {"<60": "#e6e5e0", "60-69": "#9ec5f0", "70-79": "#2a78d6", "80+": "#163f74"}
+cores = {"<60": "#DDE3E8", "60-69": "#8FB3D9", "70-79": "#3A73B0", "80+": "#00468B"}
 for k, lab in [("<60", "<60"), ("60-69", "60–69"), ("70-79", "70–79"), ("80+", "≥80")]:
     bb = ax2.bar(range(len(d)), d[k].values, bottom=base, color=cores[k], label=lab, edgecolor="white", linewidth=1)
     if k in ("70-79", "80+"):
@@ -108,7 +110,7 @@ gj = json.load(open(f"{R}/dados_ref/br_states.geojson"))
 
 from matplotlib.colors import BoundaryNorm, ListedColormap
 BOUNDS = [0.001, 5, 25, 100, 200, 400, 2000]
-CMAP = ListedColormap(plt.get_cmap("Blues")(np.linspace(0.18, 0.95, len(BOUNDS) - 1)))
+CMAP = ListedColormap(["#E3ECF5", "#B7CDE6", "#7FA6D0", "#4479B3", "#00468B", "#002B55"])
 NORM = BoundaryNorm(BOUNDS, CMAP.N)
 
 
@@ -126,7 +128,7 @@ def mapa(ax, valores, titulo):
     pc.set_array(np.array(cores, dtype=float))
     ax.add_collection(pc)
     if zeros:
-        ax.add_collection(PatchCollection(zeros, facecolor="#e5e5e5", edgecolor="white", linewidth=0.6, hatch="////"))
+        ax.add_collection(PatchCollection(zeros, facecolor="#EEF0F1", edgecolor="white", linewidth=0.6, hatch="////"))
     ax.set_xlim(-74.5, -34)
     ax.set_ylim(-34.5, 6)
     ax.set_aspect("equal")
@@ -136,13 +138,13 @@ def mapa(ax, valores, titulo):
 
 
 fig, ax = plt.subplots(1, 2, figsize=(10, 5.3))
-mapa(ax[0], uf.TAVI_SUS_pm_padr.to_dict(), "A  SUS: TAVI per million without a plan")
+mapa(ax[0], uf.TAVI_SUS_pm_padr.to_dict(), "A  SUS: TAVI per million without plan coverage")
 pc = mapa(ax[1], uf.TAVI_Planos_pm_padr.to_dict(), "B  Private plans: TAVI per million beneficiaries")
 h = hosp[hosp.TAVI_2024_2025 > 0]
 ax[0].scatter(h.longitude_estabelecimento_decimo_grau, h.latitude_estabelecimento_decimo_grau, s=6 + h.TAVI_2024_2025 / 3,
-              facecolors="none", edgecolors=PL, linewidths=1.3, label="SUS TAVI centres (size = volume 2024–25)")
+              facecolors="none", edgecolors=INK, linewidths=1.1, label="SUS TAVI centres (size = volume 2024–25)")
 from matplotlib.patches import Patch
-ax[0].legend(handles=[ax[0].collections[-1], Patch(facecolor="#e5e5e5", hatch="////", edgecolor="#999999", label="No TAVI recorded")],
+ax[0].legend(handles=[ax[0].collections[-1], Patch(facecolor="#EEF0F1", hatch="////", edgecolor="#8A949A", label="No TAVI recorded")],
              loc="upper left", bbox_to_anchor=(0.0, 0.02), fontsize=7.5, frameon=False, ncol=2)
 cb = fig.colorbar(pc, ax=ax, shrink=0.6, ticks=BOUNDS[:-1], spacing="uniform")
 cb.ax.set_yticklabels([">0", "5", "25", "100", "200", "400"])
@@ -167,7 +169,7 @@ for g in ordem:
     y += 0.4
 rows = pd.DataFrame(rows)
 fig, ax = plt.subplots(figsize=(7.5, 5.2))
-cor = ["#163f74" if "SUS +" in s else SUS if "SUS only" in s else GR for s in rows.rotulo]
+cor = [SUS if "SUS +" in s else "#7FA6D0" if "SUS only" in s else GR for s in rows.rotulo]
 b = ax.barh(ys, rows.tavi_por_milhao, color=cor, height=0.7)
 ax.bar_label(b, labels=[f"{v:.1f}" if v < 20 else f"{v:.0f}" for v in rows.tavi_por_milhao], padding=3, fontsize=8.5)
 ax.set_yticks(ys, rows.rotulo, fontsize=8.5)
@@ -183,6 +185,7 @@ for v, txt in [(hi, f"ESC high-income median {hi:.0f}"), (mi, f"ESC middle-incom
 ax.set_xlabel("TAVI per million inhabitants (total population)")
 ax.set_title("International context: TAVI per million inhabitants", loc="left", fontweight="bold")
 ax.grid(axis="y", visible=False)
+ax.grid(axis="x", visible=True)
 ax.set_xlim(0, rows.tavi_por_milhao.max() * 1.15)
 ax.set_ylim(ys[-1] + 1.5, -0.9)
 fig.tight_layout()

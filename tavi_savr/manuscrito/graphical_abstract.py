@@ -12,11 +12,8 @@ from matplotlib.patches import FancyBboxPatch
 
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 O = os.path.join(R, "manuscrito", "figuras")
-for f in font_manager.findSystemFonts():
-    if "Inter" in f:
-        font_manager.fontManager.addfont(f)
-plt.rcParams["font.family"] = "Inter"
-INK, MUT, OR, NAV, GR, LN = "#111827", "#6b7280", "#d35400", "#1f2937", "#bdbdbd", "#d1d5db"
+plt.rcParams["font.family"] = "Liberation Sans"
+INK, MUT, OR, NAV, GR, LN = "#1B1B1B", "#5B6770", "#ED0000", "#00468B", "#ADB6B6", "#D5DADD"
 
 pad = pd.read_csv(f"{R}/resultados_auditoria/A2_A3_taxas_padronizadas_e_limites.csv")
 pad = pad[pad.ano.between(2021, 2025)]
@@ -64,13 +61,13 @@ fig.text(0.04, 0.215, "Per million, ≥60 y, age-standardized · same rule:\n≥
          fontsize=10.5, color=MUT, style="italic")
 
 # ---------- B: geography ----------
-cab(0.36, "B", "Geography", "10 of 27", OR, "states with no SUS TAVI in 2025")
+cab(0.36, "B", "Geography", "10 of 27", NAV, "states with no SUS TAVI in 2025")
 ax = fig.add_axes([0.47, 0.335, 0.15, 0.22])
 g = r6.set_index(["grupo", "regiao"]).mediana_km
 lab = ["TAVI recipients", "SAVR ≥70 · Brazil", "SAVR ≥70 · Northeast", "SAVR ≥70 · North"]
 val = [g[("TAVI (SUS)", "Brasil")], g[("SAVR aórtica ≥70 (SUS)", "Brasil")], g[("SAVR aórtica ≥70 (SUS)", "Nordeste")],
        g[("SAVR aórtica ≥70 (SUS)", "Norte")]]
-cores = [NAV, GR, GR, OR]
+cores = [NAV, GR, GR, "#002B55"]
 b = ax.barh(range(4)[::-1], val, color=cores, height=0.6)
 for i, v in zip(range(4)[::-1], val):
     ax.text(v + 12, i, f"{v:.0f} km", va="center", fontsize=10.5, color=INK)
@@ -86,7 +83,7 @@ ax = fig.add_axes([0.80, 0.335, 0.13, 0.22])
 paises = [("France (2019)", "France"), ("Spain (2023)", "Spain"), ("England (2022/23)", "England"), ("Poland (2019)", "Poland"),
           ("Brazil, SUS + private plans (2025)", "Brazil"), ("ESC middle-income countries, median (2023)", "ESC middle-income")]
 v = [intl.loc[k, "tavi_por_milhao"] for k, _ in paises]
-ax.barh(range(len(v))[::-1], v, color=[OR if n == "Brazil" else GR for _, n in paises], height=0.6)
+ax.barh(range(len(v))[::-1], v, color=[NAV if n == "Brazil" else GR for _, n in paises], height=0.6)
 for i, x in zip(range(len(v))[::-1], v):
     ax.text(x + 4, i, f"{x:.0f}", va="center", fontsize=10.5, color=INK)
 ax.set_yticks(range(len(v))[::-1], [n for _, n in paises], fontsize=10.5, color=INK)
@@ -96,7 +93,7 @@ fig.text(0.68, 0.215, "No shift to younger patients: ≥80 y = 58% → 60%\nof p
          color=MUT, style="italic")
 
 # ---------- message ----------
-fig.add_artist(FancyBboxPatch((0.04, 0.03), 0.92, 0.135, boxstyle="square,pad=0", fc="#f3f4f6", ec="none"))
+fig.add_artist(FancyBboxPatch((0.04, 0.03), 0.92, 0.135, boxstyle="square,pad=0", fc="#EEF2F6", ec="none"))
 t1 = fig.text(0.06, 0.112, "TAVI grew fast, but far below high-income volumes — ", fontsize=15.5, weight="bold", color=INK)
 fig.canvas.draw()
 bb = t1.get_window_extent().transformed(fig.transFigure.inverted())
