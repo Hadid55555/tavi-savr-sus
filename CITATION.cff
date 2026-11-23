@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite it as below."
 title: "Code and data for: Transcatheter aortic valve implantation in Brazil: a nationwide study of public and private health-sector hospitalizations, 2015–2025"
 version: 1.0.0
+doi: 10.5281/zenodo.24465147
 license: MIT
 authors:
   - family-names: Hadid

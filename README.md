@@ -161,4 +161,4 @@ II and III), no ethics committee approval or informed consent was required.
 
 ## Citation
 
-See `CITATION.cff`. DOI: [to be added after the Zenodo release].
+See `CITATION.cff`. DOI: [10.5281/zenodo.24465148](https://doi.org/10.5281/zenodo.24465148) (version 1.0.0; all versions: [10.5281/zenodo.24465147](https://doi.org/10.5281/zenodo.24465147)).
